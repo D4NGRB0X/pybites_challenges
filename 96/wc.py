@@ -1,5 +1,3 @@
-
-import string
 def wc(file_):
     """Takes an absolute file path/name, calculates the number of
        lines/words/chars, and returns a string of these numbers + file, e.g.:
