@@ -7,7 +7,7 @@ def check_shared_birthday(birthday):
     birthday_month_day = (birthday.month, birthday.day)
 
     if birthday_month_day in BIRTHDAYS:
-        shared_birthday = True;
+        shared_birthday = True
 
     BIRTHDAYS.append(birthday_month_day)
 
@@ -20,7 +20,7 @@ class BirthdayDict(dict):
 
     def __setitem__(self, name, birthday):
         super().__setitem__(name, birthday)
-        if check_shared_birthday(birthday):
+        if check_shared_birthday(birthday):  # you've created a specific version of any() built-in
             print(MSG.format(name))
 
 
