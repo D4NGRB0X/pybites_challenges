@@ -1,6 +1,5 @@
 def get_index_different_char(chars):
-    alpha_num_char = []
-    not_alpha_num_char = []
+    alpha_num_char, not_alpha_num_char = [], []
     for char in chars:
         if str(char).isalnum():
             alpha_num_char.append(char)
